@@ -32,9 +32,16 @@ public class BallController : MonoBehaviour
         {
             vy = -vy;
         }
-        else if (other.gameObject.CompareTag("EastWall") || other.gameObject.CompareTag("WestWall"))
+        else if ((other.gameObject.CompareTag("EastWall") || other.gameObject.CompareTag("WestWall")))
         {
             vx = -vx;
+            //transform.position = new Vector3(0, 0, 0);
+        }
+
+        if (other.gameObject.CompareTag("Paddle"))
+        {
+            vx = -vx;
+            vy = -vy;
         }
     }
 }
