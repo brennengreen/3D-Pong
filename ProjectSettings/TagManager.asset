@@ -9,6 +9,7 @@ TagManager:
   - EastWall
   - WestWall
   - Paddle
+  - Score
   layers:
   - Default
   - TransparentFX
